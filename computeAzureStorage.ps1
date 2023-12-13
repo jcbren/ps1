@@ -50,8 +50,8 @@ foreach ($line in $file) {
             15 {$diskSum += (256 * $line.quantity); $diskMatch++; Break}
             20 {$diskSum += (512 * $line.quantity); $diskMatch++; Break}
             30 {$diskSum += (1024 * $line.quantity); $diskMatch++; Break}
-            40 {$diskSum += (2056 * $line.quantity); $diskMatch++; Break}
-            50 {$diskSum += (4098 * $line.quantity); $diskMatch++; Break}           
+            40 {$diskSum += (2048 * $line.quantity); $diskMatch++; Break}
+            50 {$diskSum += (4096 * $line.quantity); $diskMatch++; Break}           
 
         } 
     }   
