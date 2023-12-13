@@ -19,6 +19,7 @@ foreach ($line in $file) {
 
         switch ($meterTest) { # if meterName matches any of these, get quantity and add to running total
             "Archive LRS Data Stored" {$azSum += $line.quantity; $GBmatch++; Break}
+            "Archive RA-GRS Data Stored" {$azSum += $line.quantity; $GBmatch++; Break}
             "Backup RA-GRS Data Stored" {$azSum += $line.quantity; $GBmatch++; Break}
             "Cool LRS Data Stored" {$azSum += $line.quantity; $GBmatch++; Break}
             "Data Archive" {$azSum += $line.quantity; $GBmatch++; Break}
